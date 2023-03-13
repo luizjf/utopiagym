@@ -1,0 +1,156 @@
+@media screen and (max-width: 1200px){
+
+
+    *{
+        max-width: 1200px;
+    }
+
+    body{
+        width: 1200px;
+    }
+
+    .call, .net-social{
+    margin-right: 20px;
+    }
+
+    .logo{
+        margin-right: 95px;
+    }
+
+    #cards section.card{
+        padding: 1rem 1.5rem;
+    }
+
+}
+
+@media screen and (max-width: 1031px){
+    .introduction{
+        margin-left: 290px;
+    }
+}
+
+@media screen and (max-width: 976px){
+
+    *{
+        max-width: 976px;
+    }
+    
+    body{
+        width: 976px;
+    }
+
+    .call{
+        margin-right: 10px;
+    }
+
+    .introduction{
+        margin-left: 150px;
+    }
+
+    #introduction-p{
+        margin-left: 150px;
+    }
+
+    #location{
+        margin-left: 150px;
+    }
+}
+
+
+@media screen and (max-width: 926px){
+ 
+    *{
+        max-width: 926px;
+    }
+    
+    body{
+        width: 100%;
+    }
+
+
+    .call{
+        margin-right: 5px;
+    }
+
+}
+
+@media screen and (max-width: 846px){
+
+    
+    body{
+        width: 100%;
+    }
+    
+    .call{
+        margin-right: 3px;
+    }
+
+    #introduction-p{
+        margin-top: 50px;
+    }
+
+    #location{
+        margin-left: 100px;
+    }
+
+    h3{
+        font-size: 18px;
+    }
+
+    #cards section.card{
+        padding: 0.8rem 0.8rem;
+    }
+
+    .effect{
+        font-size: 12px;
+        padding: 0.2rem 0.3rem;
+    }
+
+    
+}
+
+@media screen and (max-width: 570px){
+
+    .topbar{
+        width: 100%;
+        height: 12%;
+    }
+
+    .logo{
+        width: 100px;
+        margin-top: 10px;
+        margin-right: 50px;
+    }
+
+
+    .net-social button{
+        width: 30px;
+        height: 30px;
+    }
+
+    .slider{
+        width: 100%;
+    }
+
+    .call{
+        display: none;
+    }
+
+    .welcome{
+        padding: 170px;
+    }
+
+    .introduction{
+        top: 710px;
+        margin-left: 320px;
+        font-size: 58px;
+        margin-right: 0;
+    }
+
+    #introduction-p{
+        display: none;
+    }
+    
+}
+
+

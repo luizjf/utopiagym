@@ -1,0 +1,457 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    max-width: 1349px;
+}
+
+body{
+    font-family: Helvetica, sans-serif;
+}
+
+
+/* <!-- -------------- Topbar -------------- --> */
+.topbar{
+    background-color: black;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 18%;
+    top: 0;
+    background-size: auto;
+    border-bottom: px solid yellow;
+    margin: 0 auto;
+    padding: 10px;
+    font-size: 15px;
+    z-index: 1;
+}
+
+.logo{
+    width: 120px;
+    margin-right: 150px;
+}
+
+.call{
+    display: inline-block;
+    color: white;
+    padding: 10px;
+    margin: 0;
+    text-decoration: none;
+    margin-right: 35px;
+    transition: transform 450ms ease-in-out;
+}
+
+.call:hover{
+    background-color: rgb(255, 255, 2);
+    color: black;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgb(255, 255, 69);
+    transform: scale(1.1);
+}
+
+.net-social button{
+    width: 40px;
+    height: 40px;
+    background-image: linear-gradient(45deg, rgb(239, 243, 13), rgb(49, 49, 49) );
+    border-radius: 20px;
+}
+
+.net-social button i{
+    font-size: 25px;
+    color: white;
+}
+
+
+/* <!---------------- Slide ----------------> */
+.slider{
+    margin: 0 auto;
+    width: 1366px;
+    height: 520px;
+    overflow: hidden;
+    margin-top: 50px;
+    border-bottom: 3px solid yellow;
+}
+
+.slides{
+    width: 400%;
+    height: 400px;
+    display: flex;
+}
+
+.slides input{
+    display: none;
+}
+
+.slide{
+    width: 25%;
+    position: relative;
+    transition: 5s;
+}
+
+.slide{
+    width: 1366px;
+    height: 520px;
+}
+
+.slide1{
+    width: 25%;
+    position: relative;
+    transition: 5s;
+}
+
+.slide1{
+    width: 1366px;
+    height: 520px;
+}
+
+.slide img{
+    width: 1366px;
+    height: 520px;
+}
+
+.navigation-manual{
+    position: absolute;
+    width: 800px;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+}
+
+.manual-btn{
+    margin-top: 120px;
+    margin-right: 380px;
+    border: 3px solid rgb(255, 255, 255);
+    padding: 3px;
+    width: 30px;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.manual-btn:not(:last-child){
+    margin-right: 28px;
+}
+
+.manual-btn:hover{
+    background-color: rgb(255, 255, 255);
+}
+
+
+#radio1:checked ~ .slide1{
+    margin-left: 0;
+}
+
+#radio2:checked ~ .slide1{
+    margin-left:   -100%;
+}
+
+#radio3:checked ~ .slide1{
+    margin-left:   -200%;
+}
+
+#radio4:checked ~ .slide1{
+    margin-left:   -300%;
+}
+
+#radio5:checked ~ .slide1{
+    margin-left:   -400%;
+}
+
+#radio6:checked ~ .slide1{
+    margin-left:   -500%;
+}
+
+#radio7:checked ~ .slide1{
+    margin-left:   -600%;
+}
+
+.navigation div{
+    margin-top: 120px;
+    margin-right: 380px;
+    border: 5px solid yellow;
+    padding: 3px;
+    width: 30px;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.navigation{
+    position: absolute;
+    width: 800px;
+    margin-top: 360px;
+    display: flex;
+    justify-content: center;
+}
+
+.navigation div:not(:last-child){
+    margin-right: 28px;
+}
+
+#radio2:checked ~ .navigation .btn2{
+    background-color: white;
+}
+
+#radio3:checked ~ .navigation .btn3{
+    background-color: white;
+}
+
+#radio4:checked ~ .navigation .btn4{
+    background-color: white;
+}
+
+#radio5:checked ~ .navigation .btn5{
+    background-color: white;
+}
+
+#radio6:checked ~ .navigation .btn6{
+    background-color: white;
+}
+
+#radio7:checked ~ .navigation .btn7{
+    background-color: white;
+}
+
+h1{
+    position: absolute;
+    text-align: center;
+    margin-top: 200px;
+    margin-left: 60px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    top: 0;
+    left: 0;
+    color: rgb(255, 240, 36);
+    text-shadow: 2px 2px 2px black;
+}
+
+.text-gym{
+    position: absolute;
+    text-align: left;
+    margin-top: 260px;
+    margin-left: 60px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    top: 0;
+    left: 0;
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 1px 2px black;
+}
+
+
+/* <!------------------ WELCOME UTOPIAGYM ------------------> */
+.welcome{
+    width: 1366px;
+    background: linear-gradient(rgba(0, 0, 0, 0.493),rgba(0, 0, 0, 0.918)), url(..//images/academia-turma.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-position-y: 0px;
+    background-repeat: no-repeat;
+    padding: 210px;
+    margin: 0px auto;
+    overflow: hidden;
+}
+
+.introduction{
+    position: absolute;
+    text-align: center;
+    margin-bottom: 360px;
+    margin-left: 320px;
+    font-family: 'Arial Narrow Bold', sans-serif;
+    font-size: 44px;
+    top: 770px;
+    color: rgb(255, 255, 255);
+}
+
+#introduction-p{
+    position: absolute;
+    text-align: left;
+/*     margin-bottom: 360px; */
+    margin-left: 350px;
+    font-family: 'Arial Narrow Bold', sans-serif;
+    font-size: 15px;
+    top: 830px;
+    color: rgb(255, 255, 255);
+
+}
+
+
+/* <!------------------ PRICES-CARDS ------------------> */
+#cards{
+    display: flex;
+    padding: 32px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background: linear-gradient(rgba(255, 251, 0, 0.308),rgba(251, 255, 0, 0.308)), url(../images/academia-cards.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    border-top: 3px solid yellow;
+    border-bottom: 3px solid yellow;
+    text-align: center;
+    align-items: center;
+    width: 110%;
+}
+
+#cards section.card{
+    background-color: yellow;
+    flex-direction: column;
+    box-shadow: 0px 0px 20px 15px rgba(0, 0, 0, 0.589);
+    padding: 1.5rem 2rem;
+    border-radius: 20px;
+    max-height: 256px;
+    margin-left: 20px;
+}
+
+.effect{
+    background-color: black;
+    text-decoration: none;
+    color: white;
+    padding: 0.3rem 0.5rem;
+    border-radius: 12px;
+    border: 0;
+    font-family: Helvetica, sans-serif;
+    font: 900;
+    font-size: 12px;
+}
+
+.effect:hover{
+    background-color: white;
+    color: black;
+}
+
+h3{
+    font-size: 20px;
+    font-style: italic;
+}
+
+span{
+    font-size: 13px;
+}
+
+
+/* <!--------------------- CONTACT -------------------> */
+.box{
+    display: flex;
+    width: 930px;
+    align-items: center;
+    justify-content: center;
+    font-family: Helvetica, sans-serif;
+}
+
+.form-box{
+    padding: 30px 0px;
+    width: 50%;
+}
+
+.form-box h4{
+    font-size: 22px;
+    margin-left: 20px;
+}
+
+.form-box form{
+    margin: 20px 0;
+}
+
+form .contact-form{
+    margin-bottom: 15px;
+}
+
+form .contact-form, #Nome, #message, #email, #subject, #telefone{
+    max-width: 100%;
+    width: 100%;
+    height: 47px;
+    border-radius: 12px;
+    border: 2px solid transparent;
+    outline: none;
+    padding: 15px;
+    font-size: 15px;
+    transition: all 0.4s ease;
+}
+
+#Nome, #message, #email, #subject, #telefone{
+    box-shadow: 0 0 8px 10px rgba(0, 0, 0, 0.24);
+}
+
+
+#send{
+    padding: 5px;
+    margin-top: 15px;
+    margin-left: 10px;
+    cursor: pointer;
+    font-size: 15px;
+    background-color: transparent;
+    border: 2px solid transparent;
+    border-radius: 12px;
+    color: rgb(0, 0, 0);
+    margin-bottom: 20px;
+    transition: all 0.65s ease;
+}
+
+#send:hover{
+    color: rgb(211, 7, 7);
+    transform: scale(1.1);
+}
+
+#location{
+    margin-bottom: 15px;
+    margin-left: 300px;
+    margin-right: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 50px;
+}
+
+
+/* <!---------------- HOURS --------------> */
+.bottombar{
+    background-color: black;
+    text-align: center;
+    max-height: 38px;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width: 110%;
+}
+
+.hours1{
+    background-color: rgb(226, 226, 3);
+    padding: 11px;
+    font-size: 16px;
+    color: rgb(0, 0, 0);
+    margin: auto 0;
+    display: inline-block;
+}
+
+.hours2{
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+    margin: auto 0;
+    display: inline-block;
+}
+
+.hours3{
+    margin-top: 7px;
+    font-family:  'Arial Narrow Bold', sans-serif;
+    font-size: 12px;
+}
+
+
+/* <!---------------- COPYRIGHT --------------> */
+.copy{
+    background-color: black;
+    text-align: center;
+    padding: 0;
+    margin-top: 40px;
+    font-family: 'Arial Narrow', Arial, sans-serif;
+    width: 110%;
+}
+
+.rights{
+    display: inline-block;
+    font-size: 17px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    color: aliceblue;
+    text-decoration: none;
+}
